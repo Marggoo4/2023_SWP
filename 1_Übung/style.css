@@ -1,7 +1,45 @@
-div {
-    background-color: aqua;
+.all {
+    margin: 5px;
+    width: 550px;
 }
 
-.ka p {
+.higherbox {
+    background-color: lightgreen;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+}
+
+.higherblock {
+    background-color: yellow;
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    justify-content: right;
+    align-items: flex-end;
+}
+
+
+.lowerblock {
+    background-color: red;
+    height: 450px;
+}
+
+.letterblock {
     background-color: blue;
+    width: 400px;
+    height: 300px;
+
+}
+
+.cornerblock {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+}
+
+.bottomright {
+    background-color: orange;
+    width: 50px;
+    height: 50px;
 }
