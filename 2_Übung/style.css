@@ -1,7 +1,53 @@
 .cornerblock {
-    position: absolute;
+    position: fixed;
     background-color: purple;
     width: 50px;
     height: 50px;
     right: 0px;
+    top: 0px;
+    
+}
+
+.textcontainer {
+    position: relative;
+    background-color: aqua;
+    width: 400px;
+    height: 300px;
+    top: 20px;
+    left: 20px;
+    padding: 20px;
+    
+}
+
+.textbox {
+    position: absolute;
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.bottomcontainer {
+    position: relative;
+    background-color: yellow;
+    height: 100px;
+    top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+}
+
+.bottomboxes {
+    background-color: lightblue;
+    width: 30px;
+    height: 30px;
+    
+}
+
+.letter {
+    list-style-type: disc;
+    padding: 20px;
 }
