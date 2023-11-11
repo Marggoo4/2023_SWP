@@ -1,0 +1,20 @@
+.container {
+    margin: 100px;
+    position: relative;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.left-half {
+    position: absolute;
+    background-color: red;
+    left: 0px;
+}
+
+.right-half {
+    position: absolute;
+    background-color: green;
+    right: 0px;
+}
+
