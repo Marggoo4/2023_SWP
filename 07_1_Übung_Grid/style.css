@@ -1,20 +1,38 @@
 .container {
-    margin: 100px;
     position: relative;
     background-color: aqua;
     display: grid;
     grid-template-columns: auto auto;
+    margin: 100px;
+    height: 800px;
+    
 }
 
 .left-half {
     position: absolute;
-    background-color: red;
-    left: 0px;
+    background-color: coral;
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    column-gap: 1px;
 }
 
 .right-half {
     position: absolute;
-    background-color: green;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    column-gap: 1px;
     right: 0px;
+    width: 300px;
+    height: 800px;
 }
 
+.smallbox {
+    background-color: green;
+    height: 50px;
+}
+
+.bigbox {
+    background-color: green;
+    height: 50px;
+}
