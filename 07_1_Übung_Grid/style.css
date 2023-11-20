@@ -1,46 +1,41 @@
 .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     background-color: aqua;
-    display: flex;
-    justify-content: space-between;
     margin: 100px;
-    min-height: calc(100vh - 200px); /* 100% Viewport Height - 200px for top and bottom margin */
-    box-sizing: border-box;
+    min-height: calc(100vh - 200px);
 }
 
 .left-half {
-    position: relative;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Drei Spalten */
-    grid-template-rows: repeat(2, 1fr); /* Zwei Reihen */
-    gap: 1px;
-    flex: 1;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.5fr;
+    gap: 0px 0px;
     border: 1px solid black;
     padding: 20px;
-    box-sizing: border-box;
-    justify-content: space-between;
-    
 }
 
 .right-half {
     display: grid;
-    grid-template-columns: auto auto auto;
-    column-gap: 1px;
-    flex: 1;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1px;
     border: 1px solid black;
     padding: 20px;
-    box-sizing: border-box;
-
 }
 
-
 .smallbox {
-    background-color: green;
-    height: 50px;
-    width: 50px;
+    padding: 5px;
+    background-color: coral;
+    height: 100px;
+    width: 100px;
+    justify-self: center;
+    align-self: center;
 }
 
 .bigbox {
-    background-color: green;
-    height: 100px;
-    width: 100px;
+    padding: 5px;
+    background-color: coral;
+    height: 200px;
+    width: 200px;
 }
