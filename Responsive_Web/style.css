@@ -1,0 +1,54 @@
+.uppercontainer {
+    margin: 100px;
+    padding: 10px;
+}
+
+.box {
+    background-color: coral;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.bottomcontainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin: 100px;
+}
+
+.block {
+    background-color: lightblue;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 800px) {
+    .uppercontainer {
+        display: flex;
+        justify-content: space-between;
+        background-color: aqua;
+        margin: 100px;
+        height: 100px;
+        padding: 10px;
+    }
+    
+    .box {
+        background-color: coral;
+        width: 100px;
+        height: 100px;
+    }
+    
+    .bottomcontainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin: 100px;
+    }
+    
+    .block {
+        background-color: lightblue;
+        height: 400px;
+    }
+}
+
