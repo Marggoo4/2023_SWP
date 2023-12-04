@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 80vw;
+    background-color: lightblue;
+}
+
+.topwrapper {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: red;
+}
+
+.firstwrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.topwrapper:nth-child(-1) {
+    display: flex;
+    flex-direction: column;
+   float: right;
+}
+
+
+
+.topwrapper li {
+    margin-right: 20px; /* Abstand zwischen den Listenelementen */
+}
+
+.midwrapper {
+    
+}
+
+.bottomwrapper {
+    
+}
