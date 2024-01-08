@@ -1,0 +1,75 @@
+body {
+    margin: 0px;
+}
+
+
+.main-container {
+    position: absolute;
+    margin-right: 10px;
+    width: 400px;
+    height: 402px;
+    right: 0px;
+    border: solid black;
+}
+
+.coral-container {
+    height: 300px;
+    width: 400px;
+    display: flex;
+    border-bottom: solid black;
+}
+
+.box1 {
+    height: 300px;
+    width: 200px;
+    background-color: lightgreen;
+    border-right: solid black;
+}
+
+.box2 {
+    height: 300px;
+    width: 200px;
+    background-color: lightblue;
+}
+
+.cornerbox {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    right: 0px;
+    top: 0px;
+}
+
+.bottom-box {
+    width: 400px;
+    height: 100px;
+    background-color: coral;
+}
+
+.bottom-left-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: solid black;
+    border-top: solid black;
+}
+
+.centered-box {
+    width: 125px;
+    height: 125px;
+    background-color: coral;
+}
+
+.topleftbox {
+    background-color: coral;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
