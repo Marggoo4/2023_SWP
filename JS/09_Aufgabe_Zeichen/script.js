@@ -7,28 +7,52 @@
 let zeilen = 4;
 let spalten = 4;
 
-let output = " ";
+
 
 for (let i = 0; i < zeilen; i++) {
     output = " ";
     for (let j = 0; j < spalten; j++) {
         if (i % 2 === 0) {
-            
-            output += "X"
+
+            output += " X"
         } else {
-            
-            output += "O";
+
+            output += " O";
         }
     }
     console.log(output); // Neue Zeile nach jeder Reihe
 }
 
-// 2. Versuche in einer for - Schleife (1-100) alle geraden Zahlen zu addieren (zwei Lösungswege ⇒ Zähler dahingehend verändern das er nur gerade Zahlen zählt und mit Modulo arbeiten.)  
+// 2. Versuche in einer for - Schleife (1-100) alle geraden Zahlen zu addieren (zwei Lösungswege ⇒ Zähler dahingehend verändern das er nur gerade Zahlen zählt und mit Modulo arbeiten.)
+
+// 1. Lösungsweg
+let result = 0;
+for (let i = 2; i <= 100; i += 2) {
+    result += i;
+}
+console.log("Alle gerade Zahlen addiert von 1-100:", result);
+
+// 2. Lösungsweg
+let result2 = 0;
+for (let i = 1; i <= 100; i++) {
+    if (i % 2 === 0) {
+        result2 += i;
+    }
+}
+console.log("Alle gerade Zahlen addiert von 1-100:", result2);
 
 
 
-// 3. Versuche mit einer for/while Schleife den Anfangsbuchstaben deines Namens auszugeben, z.B.:  
-// XX X XX X  
-// X    X X   X  
-// X            X 
-// X            X 
+// 3. Versuche mit einer for/while Schleife den Anfangsbuchstaben deines Namens auszugeben, z.B.:
+// XX X XX X
+// X    X X   X
+// X            X
+// X            X
+
+let name = "Marco";
+let nameLength = name.length;
+
+for (let index = 0; index < nameLength; index++) {
+    let pattern = "";
+    
+}
