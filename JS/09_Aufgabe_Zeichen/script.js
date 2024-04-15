@@ -50,9 +50,18 @@ console.log("Alle gerade Zahlen addiert von 1-100:", result2);
 // X            X
 
 let name = "Marco";
-let nameLength = name.length;
+let muster = '';
 
-for (let index = 0; index < nameLength; index++) {
-    let pattern = "";
-    
+for (let i = 0; i < name.length; i++) {
+    for (let j = 0; j < name.length; j++) {
+        if (i === 0 || j === 0) {
+            muster += name[i];
+        } else {
+            muster += ' ';
+        }
+    }
 }
+
+console.log(muster);
+
+// kapiere ich nicht ganz
