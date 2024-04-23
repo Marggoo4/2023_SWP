@@ -33,8 +33,6 @@ function supercalculation(a, b) {
 
 // printEasterDate(year) -> Diese Funktion bekommt das gewünschte Jahr
 // und schreibt das Datum von Ostern.
-
-
 function printEasterDate(year) {
     let N = year - 1900;
     let A = N % 19;
@@ -44,17 +42,15 @@ function printEasterDate(year) {
     let W = (N + Q + 31 - M) % 7;
     let P = 25 - M - W;
 
-    let easterDay, easterMonth;
+    let easterDay;
 
     if (P > 0) {
-        easterMonth = 4; // April
-        easterDay = P;
+        easterDay = P + ". April";
     } else {
-        easterMonth = 3; // März
-        easterDay = P + 31;
+        easterDay = P + 31 + ". März";
     }
 
-    console.log("Im Jahr" + year + "ist der Ostersonntag" + easterDay + ". " + (easterMonth === 4 ? "April" : "März"));
+    console.log("Im Jahr " + year + " ist der Ostersonntag am " + easterDay);
 }
 
 let randomyear = Math.floor(Math.random() * 31) + 2000;
