@@ -63,6 +63,8 @@ printEasterDate(randomyear);
 let result = add(8, 4);
 console.log(result);
 
+/* 2 Möglichkeit */ console.log(add(8, 4));
+
 
 let result2 = subtract(8, 4);
 console.log(result2);
